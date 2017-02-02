@@ -84,40 +84,46 @@
 
 
 
-<meta name="description" content="##先写一点：格式问题  # -- coding：utf-8 --
-##列表是Python中最基本的数据结构。有序
-
+<meta name="description" content="格式问题# -*- coding：utf-8 -*-
+列表是Python中最基本的数据结构。有序
 格式：list_name = [value1, value2, …]
-列表中的元素不要求为同一类型，例： mix = [1, 2, 3, “Python”, “java”]
+列表中的元素不要求为同一类型，例：
+ mix = [1, 2, 3, “Python”, “java”]
+
 
 代码示例：
-#-- coding:utf-8 --
-#声明number listnumber_list =">
+#-*- coding:utf-8 -*-
+#声明number list
+number_list = [1,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础学习之List">
 <meta property="og:url" content="http://yoursite.com/2017/01/24/Python基础学习之List/index.html">
 <meta property="og:site_name" content="潘磊的博客">
-<meta property="og:description" content="##先写一点：格式问题  # -- coding：utf-8 --
-##列表是Python中最基本的数据结构。有序
-
+<meta property="og:description" content="格式问题# -*- coding：utf-8 -*-
+列表是Python中最基本的数据结构。有序
 格式：list_name = [value1, value2, …]
-列表中的元素不要求为同一类型，例： mix = [1, 2, 3, “Python”, “java”]
+列表中的元素不要求为同一类型，例：
+ mix = [1, 2, 3, “Python”, “java”]
+
 
 代码示例：
-#-- coding:utf-8 --
-#声明number listnumber_list =">
-<meta property="og:updated_time" content="2017-02-02T11:39:28.835Z">
+#-*- coding:utf-8 -*-
+#声明number list
+number_list = [1,">
+<meta property="og:updated_time" content="2017-02-02T12:51:13.036Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python基础学习之List">
-<meta name="twitter:description" content="##先写一点：格式问题  # -- coding：utf-8 --
-##列表是Python中最基本的数据结构。有序
-
+<meta name="twitter:description" content="格式问题# -*- coding：utf-8 -*-
+列表是Python中最基本的数据结构。有序
 格式：list_name = [value1, value2, …]
-列表中的元素不要求为同一类型，例： mix = [1, 2, 3, “Python”, “java”]
+列表中的元素不要求为同一类型，例：
+ mix = [1, 2, 3, “Python”, “java”]
+
 
 代码示例：
-#-- coding:utf-8 --
-#声明number listnumber_list =">
+#-*- coding:utf-8 -*-
+#声明number list
+number_list = [1,">
 
 
 
@@ -339,35 +345,68 @@
       
 
       
-        <p>##先写一点：格式问题  # -<em>- coding：utf-8 -</em>-</p>
-<p>##列表是Python中最基本的数据结构。有序</p>
-<ol>
+        <h2 id="格式问题"><a href="#格式问题" class="headerlink" title="格式问题"></a>格式问题</h2><pre><code># -*- coding：utf-8 -*-
+</code></pre><h3 id="列表是Python中最基本的数据结构。有序"><a href="#列表是Python中最基本的数据结构。有序" class="headerlink" title="列表是Python中最基本的数据结构。有序"></a>列表是Python中最基本的数据结构。有序</h3><ol>
 <li>格式：list_name = [value1, value2, …]</li>
-<li>列表中的元素不要求为同一类型，例：<br> mix = [1, 2, 3, “Python”, “java”]</li>
+<li><p>列表中的元素不要求为同一类型，例：</p>
+<p> mix = [1, 2, 3, “Python”, “java”]</p>
+</li>
 </ol>
 <p>代码示例：</p>
-<p>#-<em>- coding:utf-8 -</em>-</p>
-<p>#声明number list<br>number_list = [1, 3, 5, 7, 9]</p>
-<p>#声明string list<br>string_list = [“java”, “python”, “c”]</p>
-<p>#声明混合类型，Python中怒要求list中所有元素为同一类型<br>mix_list = [1, 2, “java”]</p>
-<p>print(“number_list: “ + str(number_list))</p>
-<p>#删除操作<br>del number_list[2]<br>print(“number_list after del: “ + str(number_list))</p>
-<p>#计算长度<br>print(“计算长度:” + str(len([1,2,3])))</p>
-<p>#连接<br>print(“连接:” + str([1,2,3] + [4,5,6]))</p>
-<p>#重复<br>print(“重复4次” + str([“hello”]*4))</p>
-<p>#判断某个元素是否存在在列表中<br>print(“3是否在[1,2,3]中：” + str(3 in [1,2,3]))</p>
-<p>#遍历,0开始<br>print(string_list[0:])</p>
-<p>#列表List包含的函数<br>a_list = [3,4,5,2,8,7,9,1,6]<br>print(len(a_list))<br>print(max(a_list))<br>print(min(a_list))</p>
-<p>#列表操作包含以下方法<br>a_list.append(12)   #尾部追加<br>print(a_list[0:])</p>
-<p>print(“2在列表中出现的次数：”+str(a_list.count(2)))     #统计某个元素在列表中出现的次数</p>
-<p>a_list.extend([11,111,1111])    #在列表结尾追加另一个序列中的多个值<br>print(“extend后的a_list：”+str(a_list))</p>
-<p>print(a_list.index(3))       #在列表中找出某个值第一次匹配是的索引值</p>
-<p>a_list.insert(1, 90)         #在第二个位置插入90<br>print(“插入90在第二个位置：”+ str(a_list))</p>
-<p>print(a_list.pop(0))         #删除某个位置的元素（默认是最后一个元素）并返回该值</p>
-<p>a_list.remove(90)           #将列表中某个值第一个匹配的位置删除<br>print(“删除90后的列表：”+ str(a_list))</p>
-<p>a_list.reverse()            #反转列表<br>print(“反转后的列表：”+str(a_list))</p>
-<p>a_list.sort(key=None, reverse=False)<br>print(“排序后的列表：” + str(a_list))</p>
+<pre><code>#-*- coding:utf-8 -*-
+#声明number list
+number_list = [1, 3, 5, 7, 9]
+#声明string list
+string_list = [&quot;java&quot;, &quot;python&quot;, &quot;c&quot;]
+#声明混合类型，Python中怒要求list中所有元素为同一类型
+mix_list = [1, 2, &quot;java&quot;]
 
+print(&quot;number_list: &quot; + str(number_list))
+#删除操作
+del number_list[2]
+print(&quot;number_list after del: &quot; + str(number_list))
+
+#计算长度
+print(&quot;计算长度:&quot; + str(len([1,2,3])))
+#连接
+print(&quot;连接:&quot; + str([1,2,3] + [4,5,6]))
+#重复
+print(&quot;重复4次&quot; + str([&quot;hello&quot;]*4))
+#判断某个元素是否存在在列表中
+print(&quot;3是否在[1,2,3]中：&quot; + str(3 in [1,2,3]))
+#遍历,0开始
+print(string_list[0:])
+
+#列表List包含的函数
+a_list = [3,4,5,2,8,7,9,1,6]
+print(len(a_list))
+print(max(a_list))
+print(min(a_list))
+#列表操作包含以下方法
+a_list.append(12)   #尾部追加
+print(a_list[0:])
+ #统计某个元素在列表中出现的次数
+print(&quot;2在列表中出现的次数：&quot;+str(a_list.count(2)))    
+
+a_list.extend([11,111,1111])    #在列表结尾追加另一个序列中的多个值
+print(&quot;extend后的a_list：&quot;+str(a_list))
+
+print(a_list.index(3))       #在列表中找出某个值第一次匹配是的索引值
+
+a_list.insert(1, 90)         #在第二个位置插入90
+print(&quot;插入90在第二个位置：&quot;+ str(a_list))
+
+print(a_list.pop(0))         #删除某个位置的元素（默认是最后一个元素）并返回该值
+
+a_list.remove(90)           #将列表中某个值第一个匹配的位置删除
+print(&quot;删除90后的列表：&quot;+ str(a_list))
+
+a_list.reverse()            #反转列表
+print(&quot;反转后的列表：&quot;+str(a_list))
+
+a_list.sort(key=None, reverse=False)
+print(&quot;排序后的列表：&quot; + str(a_list))
+</code></pre>
       
     </div>
 
@@ -458,8 +497,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/upload/image/avator.png"
@@ -528,6 +576,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#格式问题"><span class="nav-number">1.</span> <span class="nav-text">格式问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表是Python中最基本的数据结构。有序"><span class="nav-number">1.1.</span> <span class="nav-text">列表是Python中最基本的数据结构。有序</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
