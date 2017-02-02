@@ -85,30 +85,33 @@
 
 
 <meta name="description" content="闭包Closure在谈论装饰器之前需要我们需要先对闭包进行一个大致的讲解。因为装饰器的实现需要就是对闭包的高级使用
-什么是闭包闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)def func(val):
+什么是闭包闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)
+def func(val):
     def in_func():
         print(val)
-    return in_func
-f =">
+return in_func
+f = fun">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python装饰器详解">
 <meta property="og:url" content="http://yoursite.com/2017/02/02/Python装饰器详解/index.html">
 <meta property="og:site_name" content="潘磊的博客">
 <meta property="og:description" content="闭包Closure在谈论装饰器之前需要我们需要先对闭包进行一个大致的讲解。因为装饰器的实现需要就是对闭包的高级使用
-什么是闭包闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)def func(val):
+什么是闭包闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)
+def func(val):
     def in_func():
         print(val)
-    return in_func
-f =">
-<meta property="og:updated_time" content="2017-02-02T11:51:22.998Z">
+return in_func
+f = fun">
+<meta property="og:updated_time" content="2017-02-02T11:59:58.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python装饰器详解">
 <meta name="twitter:description" content="闭包Closure在谈论装饰器之前需要我们需要先对闭包进行一个大致的讲解。因为装饰器的实现需要就是对闭包的高级使用
-什么是闭包闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)def func(val):
+什么是闭包闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)
+def func(val):
     def in_func():
         print(val)
-    return in_func
-f =">
+return in_func
+f = fun">
 
 
 
@@ -331,13 +334,14 @@ f =">
 
       
         <h2 id="闭包Closure"><a href="#闭包Closure" class="headerlink" title="闭包Closure"></a>闭包Closure</h2><p>在谈论装饰器之前需要我们需要先对闭包进行一个大致的讲解。因为装饰器的实现需要就是对闭包的高级使用</p>
-<h3 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h3><p>闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)<br><code>def func(val):
+<h3 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h3><p>闭包就是在一个函数内部定义一内层函数，该内层函数对外部函数的变量进行了引用。废话少说，直接上代码(Python版本3.4)</p>
+<pre><code>def func(val):
     def in_func():
         print(val)
-    return in_func
+return in_func
 f = func(89)
-f()</code></p>
-
+f()
+</code></pre>
       
     </div>
 
