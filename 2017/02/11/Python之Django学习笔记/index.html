@@ -99,7 +99,7 @@
 执行完这条命令后，会自动创建一个django项目，项目目录下会有许多自动生成的文件，目录列表见图
 简单介绍一下各文件">
 <meta property="og:image" content="http://yoursite.com/list.png">
-<meta property="og:updated_time" content="2017-02-11T03:19:38.638Z">
+<meta property="og:updated_time" content="2017-02-11T03:22:44.394Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python之Django学习笔记">
 <meta name="twitter:description" content="Django是一个开放源代码的Web应用框架，由Python写成。采用了MVC的软件设计模式，它源自一个在线新闻Web站点。
@@ -338,21 +338,11 @@
 python manage.py startapp blog
 </code></pre><p>之类的</p>
 <h3 id="myblog文件夹下"><a href="#myblog文件夹下" class="headerlink" title="myblog文件夹下"></a>myblog文件夹下</h3><ol>
-<li>settings.py</li>
+<li>settings.py<br>项目的总的配置文件，配置项目的数据库信息（DATABASES字段），Templates文件路径信息（TEMPLATES字段），语言设置、时间设置等（LANGUAGE_CODE等字段），APP声明（INSTALLED_APPS字段）</li>
+<li>urls.py<br>URL配置文件，注意正则表达式的应用，以及一定要在每个url的后面加一<code>\</code> </li>
+<li>wsgi.py<br>Python与Web服务器之间的接口</li>
+<li>__init__.py<br>声明模块的文件</li>
 </ol>
-<p>项目的总的配置文件，配置项目的数据库信息（DATABASES字段），Templates文件路径信息（TEMPLATES字段），语言设置、时间设置等（LANGUAGE_CODE等字段），APP声明（INSTALLED_APPS字段）</p>
-<ol>
-<li>urls.py</li>
-</ol>
-<p>URL配置文件，注意正则表达式的应用，以及一定要在每个url的后面加一<code>\</code> </p>
-<ol>
-<li>wsgi.py</li>
-</ol>
-<p>Python与Web服务器之间的接口</p>
-<ol>
-<li>__init__.py</li>
-</ol>
-<p>声明模块的文件</p>
 
       
     </div>
