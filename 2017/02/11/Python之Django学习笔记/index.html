@@ -88,7 +88,7 @@
 安装djangopip install Django == 1.10.5
 创建项目django-admin startproject proect_name
 执行完这条命令后，会自动创建一个django项目，项目目录下会有许多自动生成的文件，目录列表见图
-简单介绍一下各文件">
+创建appdjan">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python之Django学习笔记">
 <meta property="og:url" content="http://yoursite.com/2017/02/11/Python之Django学习笔记/index.html">
@@ -97,16 +97,16 @@
 安装djangopip install Django == 1.10.5
 创建项目django-admin startproject proect_name
 执行完这条命令后，会自动创建一个django项目，项目目录下会有许多自动生成的文件，目录列表见图
-简单介绍一下各文件">
+创建appdjan">
 <meta property="og:image" content="http://yoursite.com/list.png">
-<meta property="og:updated_time" content="2017-02-11T03:22:44.394Z">
+<meta property="og:updated_time" content="2017-02-11T03:30:17.852Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python之Django学习笔记">
 <meta name="twitter:description" content="Django是一个开放源代码的Web应用框架，由Python写成。采用了MVC的软件设计模式，它源自一个在线新闻Web站点。
 安装djangopip install Django == 1.10.5
 创建项目django-admin startproject proect_name
 执行完这条命令后，会自动创建一个django项目，项目目录下会有许多自动生成的文件，目录列表见图
-简单介绍一下各文件">
+创建appdjan">
 <meta name="twitter:image" content="http://yoursite.com/list.png">
 
 
@@ -333,15 +333,24 @@
 <h2 id="安装django"><a href="#安装django" class="headerlink" title="安装django"></a>安装django</h2><pre><code>pip install Django == 1.10.5
 </code></pre><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><pre><code>django-admin startproject proect_name
 </code></pre><p>执行完这条命令后，会自动创建一个django项目，项目目录下会有许多自动生成的文件，目录列表见图<img src="list.png" alt="目录列表"></p>
-<h2 id="简单介绍一下各文件的作用"><a href="#简单介绍一下各文件的作用" class="headerlink" title="简单介绍一下各文件的作用"></a>简单介绍一下各文件的作用</h2><h3 id="manage-py文件"><a href="#manage-py文件" class="headerlink" title="manage.py文件"></a>manage.py文件</h3><p>项目的管理文件，负责各种命令的执行，如：</p>
+<h2 id="创建app"><a href="#创建app" class="headerlink" title="创建app"></a>创建app</h2><p>django是以app来划分各功能需求，</p>
+<pre><code>python manage.py startapp blog
+</code></pre><h2 id="简单介绍一下各文件的作用"><a href="#简单介绍一下各文件的作用" class="headerlink" title="简单介绍一下各文件的作用"></a>简单介绍一下各文件的作用</h2><h3 id="manage-py文件"><a href="#manage-py文件" class="headerlink" title="manage.py文件"></a>manage.py文件</h3><p>项目的管理文件，负责各种命令的执行，如：</p>
 <pre><code>python manage.py runserver
-python manage.py startapp blog
 </code></pre><p>之类的</p>
 <h3 id="myblog文件夹下"><a href="#myblog文件夹下" class="headerlink" title="myblog文件夹下"></a>myblog文件夹下</h3><ol>
+<li>__init__.py<br>声明模块的文件</li>
 <li>settings.py<br>项目的总的配置文件，配置项目的数据库信息（DATABASES字段），Templates文件路径信息（TEMPLATES字段），语言设置、时间设置等（LANGUAGE_CODE等字段），APP声明（INSTALLED_APPS字段）</li>
 <li>urls.py<br>URL配置文件，注意正则表达式的应用，以及一定要在每个url的后面加一<code>\</code> </li>
-<li>wsgi.py<br>Python与Web服务器之间的接口</li>
-<li>__init__.py<br>声明模块的文件</li>
+<li>wsgi.py<br>Python与Web服务器之间的接口<h3 id="blog文件夹（app）"><a href="#blog文件夹（app）" class="headerlink" title="blog文件夹（app）"></a>blog文件夹（app）</h3></li>
+<li>migrations文件夹<br>数据库操作</li>
+<li>templates文件夹</li>
+<li>admin.py</li>
+<li>apps.py</li>
+<li>models.py</li>
+<li>tests.py</li>
+<li>urls.py</li>
+<li>views.py</li>
 </ol>
 
       
@@ -519,7 +528,7 @@ python manage.py startapp blog
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装django"><span class="nav-number">1.</span> <span class="nav-text">安装django</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单介绍一下各文件的作用"><span class="nav-number">3.</span> <span class="nav-text">简单介绍一下各文件的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#manage-py文件"><span class="nav-number">3.1.</span> <span class="nav-text">manage.py文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#myblog文件夹下"><span class="nav-number">3.2.</span> <span class="nav-text">myblog文件夹下</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装django"><span class="nav-number">1.</span> <span class="nav-text">安装django</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建app"><span class="nav-number">3.</span> <span class="nav-text">创建app</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单介绍一下各文件的作用"><span class="nav-number">4.</span> <span class="nav-text">简单介绍一下各文件的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#manage-py文件"><span class="nav-number">4.1.</span> <span class="nav-text">manage.py文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#myblog文件夹下"><span class="nav-number">4.2.</span> <span class="nav-text">myblog文件夹下</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blog文件夹（app）"><span class="nav-number">4.3.</span> <span class="nav-text">blog文件夹（app）</span></a></li></ol></li></ol></div>
             
 
           </div>
